@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorThemeVision">#47B3E2</color>
+    <color name="colorPrimaryVision">@color/colorThemeVision</color>
+    <color name="colorPrimaryDarkVision">@color/colorThemeVision</color>
+    <color name="colorAccentVision">@color/colorThemeVision</color>
+    <color name="colorBlueVision">@color/colorThemeVision</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTrans">#00000000</color>
 </resources>

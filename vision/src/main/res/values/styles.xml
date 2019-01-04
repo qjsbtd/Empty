@@ -1,8 +1,21 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/colorPrimaryVision</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDarkVision</item>
+        <item name="android:colorAccent">@color/colorAccentVision</item>
+    </style>
+    <!-- Base activity theme. -->
+    <style name="ActTheme" parent="AppTheme">
         <!-- Customize your theme here. -->
     </style>
+    <!-- Splash activity theme. -->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/icon_splash_bg</item>
+    </style>
+
 
 </resources>
