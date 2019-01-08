@@ -1,1 +1,1 @@
-include ':app', ':vision'
+include ':app', ':vision', ':java'
