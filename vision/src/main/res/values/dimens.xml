@@ -447,4 +447,13 @@
     <dimen name="_38sp">38sp</dimen>
     <dimen name="_39sp">39sp</dimen>
     <dimen name="_40sp">40sp</dimen>
+
+
+    <dimen name="__18px">18px</dimen>
+    <dimen name="__18sp">18sp</dimen>
+    <dimen name="__18dp">18dp</dimen>
+    <dimen name="__18dip">18dip</dimen>
+    <dimen name="__18pt">18pt</dimen>
+    <dimen name="__18in">18in</dimen>
+    <dimen name="__18mm">18mm</dimen>
 </resources>

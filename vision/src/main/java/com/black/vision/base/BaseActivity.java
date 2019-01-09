@@ -1,6 +1,7 @@
 package com.black.vision.base;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
@@ -12,10 +13,13 @@ import com.black.vision.util.LogUtil;
  * Author: black
  */
 public abstract class BaseActivity extends Activity {
+    protected Context mContext;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         printLogI("onCreate...");
+        mContext = this;
         setContentView(getContentLayoutId());
         init();
     }

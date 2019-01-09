@@ -1,5 +1,6 @@
 package com.black.vision.util;
 
+import android.text.TextUtils;
 import android.util.Log;
 
 import com.black.vision.BuildConfig;
@@ -32,7 +33,9 @@ public class LogUtil {
 
     private static void printLog(int logLevel, String logTag, String logContent) {
         if (BuildConfig.DEBUG || logLevel >= ConfigUtil.LOG_LIMIT_LEVEL) {
-            Log.println(logLevel, logTag, logContent);
+            if (!TextUtils.isEmpty(logTag) && !TextUtils.isEmpty(logContent)) {
+                Log.println(logLevel, logTag, logContent);
+            }
         }
     }
 }

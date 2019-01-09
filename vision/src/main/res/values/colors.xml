@@ -5,6 +5,13 @@
     <color name="colorPrimaryDarkVision">@color/colorThemeVision</color>
     <color name="colorAccentVision">@color/colorThemeVision</color>
     <color name="colorBlueVision">@color/colorThemeVision</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorRed3">#FF3333</color>
+    <color name="colorRed4">#FF4444</color>
+    <color name="colorRed5">#FF5555</color>
+    <color name="colorRed6">#FF6666</color>
+    <color name="colorRed7">#FF7777</color>
+    <color name="colorRed8">#FF8888</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorTrans">#00000000</color>

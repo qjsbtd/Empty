@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".text.TextActivity">
 
     <TextView
+        android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="onSkipClick"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:autoLink="phone"
+        android:linksClickable="false"
+        android:selectAllOnFocus="true"
+        android:minLines="2"
+        android:maxLines="3"
+        android:ellipsize="start"
+        android:freezesText="true"
+        android:hyphenationFrequency="normal"
+        android:textAppearance="@android:style/TextAppearance.Theme"
+        android:textColorHighlight="@color/colorBlueVision"
+        android:background="@color/colorBlueVision"
+        android:textColorLink="@color/colorBlueVision"
+        android:textIsSelectable="true" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="@dimen/_96dp"
+        android:layout_height="@dimen/_48dp"
+        android:layout_below="@+id/tv_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_48dp"
+        android:background="@color/colorBlueVision"
+        android:bufferType="spannable"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:onClick="onSkipClick"
+        android:shadowColor="@color/colorRed"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="1"
+        android:elevation="@dimen/_48dp"
+        android:scaleY="1"
+        android:singleLine="true"
+        android:text="@string/click"
+        android:textScaleX="1"
+        android:textSize="@dimen/_18sp" />
+</RelativeLayout>
