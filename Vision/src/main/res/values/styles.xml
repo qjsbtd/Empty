@@ -12,9 +12,14 @@
         <!-- Customize your theme here. -->
     </style>
     <!-- Splash activity theme. -->
-    <style name="SplashTheme" parent="AppTheme">
+    <style name="SplashTheme" parent="ActTheme">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowBackground">@drawable/icon_splash_bg</item>
+    </style>
+    <!-- Splash activity theme. -->
+    <style name="VideoTheme" parent="ActTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
 

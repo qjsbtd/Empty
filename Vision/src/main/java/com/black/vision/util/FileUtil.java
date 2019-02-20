@@ -47,6 +47,10 @@ public class FileUtil {
         return checkDirPath(file) ? file.getAbsolutePath() : "";
     }
 
+    public static String getESPath() {
+        return getDirPath(Environment.getExternalStorageDirectory());
+    }
+
     public static String getRootPath() {
         return getDirPath(new File(ROOT_PATH));
     }

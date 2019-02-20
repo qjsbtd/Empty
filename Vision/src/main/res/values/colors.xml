@@ -15,4 +15,13 @@
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorTrans">#00000000</color>
+    <color name="colorGrey3">#333333</color>
+    <color name="colorGrey5">#555555</color>
+    <color name="colorGrey6">#666666</color>
+    <color name="colorGrey9">#999999</color>
+    <color name="colorGreyA">#AAAAAA</color>
+    <color name="colorGreyB">#BBBBBB</color>
+    <color name="colorGreyC">#CCCCCC</color>
+    <color name="colorGreyD">#DDDDDD</color>
+    <color name="colorGreyE">#EEEEEE</color>
 </resources>

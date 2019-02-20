@@ -4,8 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
-    <!--<uses-permission android:name="android.permission-group.STORAGE" />-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <application
         android:name=".app.VisionApp"
         android:allowBackup="true"
@@ -45,6 +44,13 @@
             android:name=".text.TextActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ActTheme" />
+
+        <activity
+            android:name=".video.VideoActivity"
+            android:screenOrientation="landscape"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/VideoTheme" />
 
     </application>
 

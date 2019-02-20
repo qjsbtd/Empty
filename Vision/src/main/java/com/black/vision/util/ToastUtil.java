@@ -1,5 +1,7 @@
 package com.black.vision.util;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,10 +23,23 @@ public class ToastUtil {
         show(VisionApp.getContext().getString(contentResId));
     }
 
-    public static void show(String content) {
+    public static void show(final String content) {
         if (VisionApp.getContext() == null) {
             return;
         }
+        if (Looper.getMainLooper().isCurrentThread()) {
+            showInner(content);
+        } else {
+            new Handler(Looper.getMainLooper()).post(new Runnable() {
+                @Override
+                public void run() {
+                    showInner(content);
+                }
+            });
+        }
+    }
+
+    private static void showInner(String content) {
         if (mToast == null) {
             mToast = new Toast(VisionApp.getContext());
             mToast.setDuration(Toast.LENGTH_SHORT);

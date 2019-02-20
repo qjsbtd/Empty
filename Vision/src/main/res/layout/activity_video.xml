@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey6"
+    tools:context=".video.VideoActivity">
+
+    <SurfaceView
+        android:id="@+id/sv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onVideoClick"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_48dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="onPreviousClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_previous" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_48dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="onNextClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_next" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_12dp"
+            android:onClick="onOverClick"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_over_off" />
+    </RelativeLayout>
+</RelativeLayout>

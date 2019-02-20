@@ -11,16 +11,13 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:autoLink="phone"
-        android:linksClickable="false"
+        android:linksClickable="true"
         android:selectAllOnFocus="true"
         android:minLines="2"
         android:maxLines="3"
         android:ellipsize="start"
         android:freezesText="true"
         android:hyphenationFrequency="normal"
-        android:textAppearance="@android:style/TextAppearance.Theme"
-        android:textColorHighlight="@color/colorBlueVision"
-        android:background="@color/colorBlueVision"
         android:textColorLink="@color/colorBlueVision"
         android:textIsSelectable="true" />
 

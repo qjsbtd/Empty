@@ -8,6 +8,7 @@ import com.black.vision.app.VisionApp;
 import com.black.vision.base.BaseActivity;
 import com.black.vision.text.TextActivity;
 import com.black.vision.util.ToastUtil;
+import com.black.vision.video.VideoActivity;
 
 
 /**
@@ -32,43 +33,10 @@ public class DispatchActivity extends BaseActivity {
     }
 
     private void skip() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    printLogE("postDelayed...0...Context==" + DispatchActivity.this);
-                    ToastUtil.show("0000000000");
-                } catch (Exception e) {
-                    printLogE(e);
-                }
-                try {
-                    printLogE("postDelayed...1...ontext==" + DispatchActivity.this.getApplicationContext());
-                    ToastUtil.show("1111111111");
-                } catch (Exception e) {
-                    printLogE(e);
-                }
-                try {
-                    printLogE("postDelayed...2...Context==" + DispatchActivity.this.getApplication());
-                    ToastUtil.show("2222222222");
-                } catch (Exception e) {
-                    printLogE(e);
-                }
-                try {
-                    printLogE("postDelayed...3...Context==" + DispatchActivity.this.getBaseContext());
-                    ToastUtil.show("3333333333");
-                } catch (Exception e) {
-                    printLogE(e);
-                }
-                try {
-                    printLogE("postDelayed...5...Context==" + DispatchActivity.this);
-                    ToastUtil.show("5555555555");
-                    ToastUtil.show("666666666666");
-                } catch (Exception e) {
-                    printLogE(e);
-                }
-            }
-        }, 5000);
-        startActivity(new Intent(this, TextActivity.class));
+        Intent intent = new Intent();
+        intent.setClass(this, TextActivity.class);
+        intent.setClass(this, VideoActivity.class);
+        startActivity(intent);
         finish();
     }
 }
