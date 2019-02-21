@@ -1,13 +1,11 @@
 package com.black.vision.portal;
 
 import android.content.Intent;
-import android.os.Handler;
 
 import com.black.vision.R;
-import com.black.vision.app.VisionApp;
 import com.black.vision.base.BaseActivity;
 import com.black.vision.text.TextActivity;
-import com.black.vision.util.ToastUtil;
+import com.black.vision.video.ScreenRecordActivity;
 import com.black.vision.video.VideoActivity;
 
 
@@ -36,6 +34,7 @@ public class DispatchActivity extends BaseActivity {
         Intent intent = new Intent();
         intent.setClass(this, TextActivity.class);
         intent.setClass(this, VideoActivity.class);
+        intent.setClass(this, ScreenRecordActivity.class);
         startActivity(intent);
         finish();
     }

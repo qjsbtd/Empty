@@ -3,6 +3,8 @@
     package="com.black.vision">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <application
@@ -51,7 +53,15 @@
             android:resizeableActivity="true"
             android:supportsPictureInPicture="true"
             android:theme="@style/VideoTheme" />
+        <activity
+            android:name=".video.ScreenRecordActivity"
+            android:screenOrientation="landscape"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/VideoTheme" />
 
+        <!-- Service -->
+        <service android:name=".video.ScreenRecordService"/>
     </application>
 
 </manifest>
